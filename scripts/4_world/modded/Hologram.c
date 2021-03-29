@@ -23,16 +23,16 @@ modded class Hologram
 			{
 				Object obj_collided = collided_objects[i];
 
-				if( obj_collided.IsInherited(PlayerStorage_Holo) )
+				if( obj_collided.IsInherited(WoodStorage_Holo) )
 				{
-					PlayerStorage_Holo var_PlayerStorage_Holo = PlayerStorage_Holo.Cast(obj_collided);
-					return var_PlayerStorage_Holo;
+					WoodStorage_Holo var_WoodStorage_Holo = WoodStorage_Holo.Cast(obj_collided);
+					return var_WoodStorage_Holo;
 				}
 				
-				if( obj_collided.IsInherited(PlayerStorage) )
+				if( obj_collided.IsInherited(WoodStorage) )
 				{
-					PlayerStorage var_PlayerStorage = PlayerStorage.Cast(obj_collided);
-					return var_PlayerStorage;
+					WoodStorage var_WoodStorage = WoodStorage.Cast(obj_collided);
+					return var_WoodStorage;
 				}		
 			}
 		}
@@ -43,7 +43,7 @@ modded class Hologram
     {
         ItemBase item_in_hands = ItemBase.Cast(m_Player.GetHumanInventory().GetEntityInHands());
 
-        if (item_in_hands.IsInherited(PlayerStorage_Kit))
+        if (item_in_hands.IsInherited(WoodStorage_Kit))
             return "WoodStorage_Holo";
 
         return super.ProjectionBasedOnParent();
@@ -72,7 +72,7 @@ modded class Hologram
     {
 		ItemBase item_in_hands = m_Parent;
 		
-        if ( item_in_hands.IsInherited(PlayerStorage_Kit))
+        if ( item_in_hands.IsInherited(WoodStorage_Kit))
         {
             SetIsColliding(false);
             return;

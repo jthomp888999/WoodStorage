@@ -30,8 +30,8 @@ class CfgVehicles
     class WoodStorage: ContainerBase
     {
         scope=2;
-        displayName="WoodStorage";
-        model="\DZ\gear\camping\wooden_case.p3d"; // PLACEHOLDER
+        displayName="Wood Storage";
+        model="WoodStorage\WoodStorageCrate1\WoodStorageCrate1.p3d";
         SingleUseActions[]={527};
         InteractActions[]={1025,1026};
         ContinuousActions[]={155};
@@ -113,16 +113,15 @@ class CfgVehicles
     class WoodStorage_Holo: WoodStorage
     {
         scope=2;
-        model="\DZ\gear\camping\wooden_case.p3d"; // PLACEHOLDER
-        physLayer="item_small";
+        model="WoodStorage\WoodStorageCrate1\WoodStorageCrate1.p3d";
     };
 
     class WoodStorage_Kit: Inventory_Base
     {
         scope=2;
-        model="\DZ\gear\camping\wooden_case.p3d"; // PLACEHOLDER
-        displayName="Player Storage Kit";
-        descriptionShort="Contains a new player storage kit.";
+        model="\DZ\gear\camping\wooden_case.p3d";
+        displayName="Wood Storage Kit";
+        descriptionShort="Contains a new wood storage kit.";
         itemSize[]={4,10};
         carveNavmesh=1;
         canBeDigged=0;

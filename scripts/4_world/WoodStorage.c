@@ -16,7 +16,17 @@ class WoodStorage_Holo extends WoodStorage{};
 class WoodStorage_Kit extends ItemBase
 {
     protected Object StorageKit;
-    
+
+    void PlayerStorage_Kit()
+    {
+        RegisterNetSyncVariableBool("m_IsSoundSynchRemote");
+    }
+
+    override void EEInit()
+	{
+		super.EEInit();
+	}
+
     override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )
     {
         super.OnPlacementComplete( player, position, orientation );
@@ -30,11 +40,6 @@ class WoodStorage_Kit extends ItemBase
 			StorageKit.SetOrientation( orientation );
             this.Delete();
         }
-    }
-
-    override bool IsTwoHandedBehaviour() 
-    {
-        return true;
     }
     
     override bool IsDeployable() 
