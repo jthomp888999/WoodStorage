@@ -29,8 +29,9 @@ class CfgVehicles
     class ContainerBase;
     class WoodStorage: ContainerBase
     {
-        scope=2;
         displayName="Wood Storage";
+        scope=2;
+        descriptionShort="Wood Storage Unit";
         model="\DZ\structures\residential\misc\misc_woodreserve.p3d";
         SingleUseActions[]={527};
         InteractActions[]={1025,1026};
