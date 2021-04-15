@@ -2,8 +2,15 @@ class CfgPatches
 {
 	class WoodStorage
 	{
-        units[]={"WoodStorage"};
-		requiredAddons[]={"DZ_Data"};
+        units[]=
+        {
+            "WoodStorage"
+        };
+		requiredAddons[] =
+        {
+            "DZ_Data",
+            "DZ_Scripts"
+        };
 	};
 };
 
