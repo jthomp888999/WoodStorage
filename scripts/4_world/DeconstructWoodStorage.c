@@ -29,7 +29,8 @@ class DeconstructWoodStorage extends RecipeBase
         InsertIngredient(0,"Hatchet");
         InsertIngredient(0,"Crowbar");
         InsertIngredient(0,"Hacksaw");
-		
+		InsertIngredient(0,"Handsaw");
+	
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
@@ -47,7 +48,7 @@ class DeconstructWoodStorage extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("PlayerStorage_Kit");//add results here
+		AddResult("WoodStorage_Kit");//add results here
 
 		m_ResultSetFullQuantity[0] = -1;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = 1;//-1 = do nothing
