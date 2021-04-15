@@ -31,7 +31,7 @@ class CfgVehicles
     {
         scope=2;
         displayName="Wood Storage";
-        model="\DZ\structures\residential\misc\misc_woodreserve\p3d";
+        model="\DZ\structures\residential\misc\misc_woodreserve.p3d";
         SingleUseActions[]={527};
         InteractActions[]={1025,1026};
         ContinuousActions[]={155};
@@ -113,7 +113,7 @@ class CfgVehicles
     class WoodStorage_Holo: WoodStorage
     {
         scope=2;
-        model="\DZ\structures\residential\misc\misc_woodreserve\p3d";
+        model="\DZ\structures\residential\misc\misc_woodreserve.p3d";
     };
 
     class WoodStorage_Kit: Inventory_Base
